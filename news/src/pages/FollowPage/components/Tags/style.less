@@ -1,0 +1,37 @@
+.tags-container {
+  display: flex;
+  flex-direction: row;
+  height: 88rpx;
+  white-space: nowrap;
+}
+
+.tag-item {
+  color: #666;
+  margin-right: 50rpx;
+  font-size: 30rpx;
+  white-space: nowrap;
+  position: relative;
+  display: inline-block;
+}
+
+.tag-item.active {
+  color: #3377FF;
+  font-weight: bold;
+}
+
+.tag-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 6px;
+  background-color: #3377FF;
+  border-radius: 3rpx;
+}
+
+.tag-item.more {
+  color: #666;
+  font-weight: bold;
+}

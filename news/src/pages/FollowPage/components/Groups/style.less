@@ -1,0 +1,159 @@
+@import '../../../../styles/variables.less';
+
+.follow-page {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+}
+
+.follow-content {
+  flex: 1;
+  background-color: #F3F5F6;;
+}
+
+/* 分组标题 */
+.follow-section {
+  padding: 0rpx 40rpx;
+  margin-bottom: 8rpx;
+  background-color: #FFFFFF;
+}
+
+.section-header {
+  display: flex;
+  padding: 30rpx 0rpx;
+  justify-content: space-between;
+
+  &-side {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 34rpx;
+  color: #181818;
+  line-height: 40rpx;
+}
+
+.section-more {
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: @border-radius-full;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: @primary-color;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+
+.follow-item {
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx 0rpx 0rpx;
+}
+
+.follow-summary {
+  font-size: 32rpx;
+  color: #000000;
+  line-height: 60rpx;
+  line-clamp: 2;
+}
+
+.follow-meta {
+  display: flex;
+  justify-content: space-between;
+  margin: 30rpx 0rpx;
+}
+.follow-split {
+  flex: 1;
+  height: 1rpx;
+  border: 1rpx solid #EBECED;
+}
+
+.follow-source {
+  font-size: 24rpx;
+  color: #9196A1;
+  line-height: 28rpx;
+}
+
+.follow-time {
+  font-size: 24rpx;
+  color: #9196A1;
+  line-height: 28rpx;
+}
+
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 160px 0;
+  color: @text-secondary;
+  text-align: center;
+}
+
+.empty-state .empty-icon {
+  font-size: 128px;
+  margin-bottom: 40px;
+  animation: pulse 3s infinite ease-in-out;
+}
+
+.empty-state p {
+  margin-bottom: 32px;
+}
+
+.empty-state .action-button {
+  margin-top: 24px;
+  background: linear-gradient(135deg, @primary-color, @primary-dark);
+  color: white;
+  border: none;
+  border-radius: @border-radius-full;
+  padding: 24px 48px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: @shadow;
+}
+
+.empty-state .action-button:hover {
+  transform: translateY(-2px);
+  box-shadow: @shadow-md;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}

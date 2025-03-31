@@ -1,0 +1,94 @@
+@import '../../styles/variables.less';
+
+.tag-management-page {
+  background-color: @white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.tag-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 40px;
+  border-bottom: 1px solid @border-color;
+  background-color: @white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.tag-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: @text-color;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: @text-color;
+  cursor: pointer;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: @border-radius-full;
+  transition: all 0.2s ease;
+}
+
+.save-button {
+  background-color: @primary-color;
+  color: white;
+  border: none;
+  border-radius: @border-radius-full;
+  padding: 12px 28px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.tag-section {
+  padding: 50rpx 40rpx 0rpx;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 30rpx;
+  color: #181818;
+  line-height: 35rpx;
+  
+}
+
+.tags-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 40rpx;
+}
+
+.tags-grid.my-tags {
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.tag-grid-item {
+  display: flex;
+  width: 152rpx;
+  height: 70rpx;
+  border-radius: 16rpx 16rpx 16rpx 16rpx;
+  border: 1rpx solid #DADCE0;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.tag-grid-item.selected {
+  background: linear-gradient( 105deg, #3377FF 0%, #337BFF 0%, #3398FF 100%);
+  border-radius: 16rpx;
+  color: #ffffff;
+}
+

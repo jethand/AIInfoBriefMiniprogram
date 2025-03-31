@@ -1,0 +1,56 @@
+.player {
+  position: fixed;
+  bottom: 32rpx;
+  left: 40rpx;
+  display: flex;
+  flex-direction: row;
+  &-content {
+    display: flex;  
+    flex-direction: row;
+    background: linear-gradient( 90deg, #3B3B3C 0%, #756A65 100%);
+    border-radius: 71rpx 71rpx 71rpx 71rpx;
+    align-items: center;
+  }
+  &-icon {
+    width: 92rpx;
+    height: 92rpx;
+    margin-left: -4rpx;
+  }
+}
+.progress-time {
+  font-weight: 400;
+  font-size: 22rpx;
+  color: #FFFFFF;
+  line-height: 26rpx;
+}
+.progress-time.start {
+  margin-left: 16rpx;
+}
+.progress {
+  width: 170rpx;
+  height: 6rpx;
+  background: #787573;
+  border-radius: 6rpx 6rpx 6rpx 6rpx;
+  margin: 0rpx 12rpx;
+  position: relative;
+  &-rate {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0rpx;
+    background-color: #FFFFFF;
+    border-radius: 6rpx;
+    height: 100%;
+  }
+}
+.pause {
+  width: 20rpx;
+  height: 24rpx;
+  margin-left: 25rpx;
+  margin-right: 50rpx;
+}
+.close {
+  width: 26rpx;
+  height: 26rpx;
+  margin-right: 23rpx;
+}
